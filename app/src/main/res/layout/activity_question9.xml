@@ -1,11 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question9Activity">
+    android:orientation="vertical"
+    tools:context=".QuizActivity"
+    android:background="@color/Grey">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginBottom="40dp">
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:textSize="8sp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/back"
+        android:drawableTint="@color/Teal"
+        android:textColor="@color/Teal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9/10                    "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+    </TextView>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:elevation="4dp"
+      android:padding="16dp"
+      android:layout_margin="16dp"
+      android:background="@drawable/rounded_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Which ancient civilization is credited with building the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center"/>
+  </LinearLayout>
+
+  <RadioGroup
+      android:id="@+id/radioGroup"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/option1"
+        style="@style/OptionStyle"
+        android:text="The Romans"
+        android:background="@drawable/bg_option"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioButton
+        android:id="@+id/option2"
+        style="@style/OptionStyle"
+        android:text="The Mayans"
+        android:background="@drawable/bg_option"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioButton
+        android:id="@+id/option3"
+        style="@style/OptionStyle"
+        android:text="The Ancient Egyptians"
+        android:background="@drawable/bg_option"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioButton
+        android:id="@+id/option4"
+        style="@style/OptionStyle"
+        android:text="The Babylonians"
+        android:background="@drawable/bg_option"
+        android:layout_marginBottom="8dp"/>
+  </RadioGroup>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Next"
+      android:textColor="@color/white"
+      android:layout_marginTop="80dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@drawable/bg_button"
+      android:id="@+id/nextBtn">
+  </Button>
+
+</LinearLayout>
