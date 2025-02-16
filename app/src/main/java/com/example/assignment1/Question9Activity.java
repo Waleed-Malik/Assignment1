@@ -23,7 +23,7 @@ public class Question9Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question10);
+        setContentView(R.layout.activity_question9);
 
         option1 = findViewById(R.id.option1);
         option2 = findViewById(R.id.option2);
