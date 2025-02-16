@@ -99,7 +99,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Finish"
         android:textColor="@color/white"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="20dp"

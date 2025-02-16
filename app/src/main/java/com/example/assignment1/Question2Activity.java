@@ -17,7 +17,7 @@ public class Question2Activity extends AppCompatActivity {
     private Button nextBtn, prevBtn;
     private String userName;
     private int correctAnswersCount;
-    private final int correctAnswerId = R.id.option3; // Update per question
+    private final int correctAnswerId = R.id.option2; // Update per question
     private boolean isAnswered = false;
 
     @Override
